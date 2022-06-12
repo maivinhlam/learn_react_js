@@ -5,7 +5,7 @@ class ToDoItem extends Component {
 		let title = this.props.title;
 		return (
 			<div className="ToDoItem">
-				<p>{title}</p>				
+				<p>{title}</p>
 			</div>
 		);
 	}
