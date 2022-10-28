@@ -1,29 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { Button } from 'react-bootstrap';
+import React from "react";
+import "./App.css";
 
+import SearchBox from "./components/search-box";
+import List from "./components/list";
+import { Row, Container } from "react-bootstrap";
+import "./components/fontawesome"
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Button >Show button</Button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container className="mt-5">
+        <Row className="">
+          <SearchBox/>
+        </Row>
+        <Row className='mt-4'>
+          <List/>
+        </Row>
+    </Container>
   );
-}
+};
 
 export default App;
