@@ -1,22 +1,14 @@
-import React from "react";
 import "./App.css";
+import "./components/add-box";
+import "./components/list";
+import TodoList from './features/todo-list'
 
-import SearchBox from "./components/search-box";
-import List from "./components/list";
-import { Row, Container } from "react-bootstrap";
-import "./components/fontawesome"
-
-const App: React.FC = () => {
+function App() {
   return (
-    <Container className="mt-5">
-        <Row className="">
-          <SearchBox/>
-        </Row>
-        <Row className='mt-4'>
-          <List/>
-        </Row>
-    </Container>
+    <div className="App">
+      <TodoList></TodoList>
+    </div>
   );
-};
+}
 
 export default App;
