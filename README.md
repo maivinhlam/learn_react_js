@@ -16,3 +16,11 @@
     npm i -S @fortawesome/fontawesome-svg-core @fortawesome/react-fontawesome 
     npm i -S @fortawesome/free-regular-svg-icons
 `
+## Add Redux 
+`
+    npm install @reduxjs/toolkit react-redux
+`
+## Add UUID
+`
+    npm i react-uuid
+`
