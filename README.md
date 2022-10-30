@@ -24,3 +24,7 @@
 `
     npm i react-uuid
 `
+## Add router
+`
+    npm i --save react-router-dom
+`
